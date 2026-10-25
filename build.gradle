@@ -1,0 +1,61 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id "org.parchmentmc.librarian.forgegradle" version  "1+"
+    id 'org.spongepowered.mixin' version '0.7+'
+}
+
+base {
+    archivesName = "${mod_id}-${mod_version}_${minecraft_version}"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: "parchment", version: mapping_version
+
+    runs {
+        configureEach {
+            workingDirectory file("run")
+            property "forge.logging.console.level", "debug"
+            property "fml.earlyprogresswindow", "false"
+
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        client {
+            taskName "client"
+            property "forge.enabledGameTestNamespaces", mod_id
+        }
+
+        server {
+            taskName "server"
+            property "forge.enabledGameTestNamespaces", mod_id
+        }
+    }
+    sourceSets.main.resources { srcDir "src/generated/resources" }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    //Optional compats
+    implementation fg.deobf("curse.maven:ftb-chunks-forge-314906:6431735")
+    implementation fg.deobf("curse.maven:ftb-library-forge-404465:7296748")
+    implementation fg.deobf("curse.maven:ftb-teams-forge-404468:7499810")
+
+    //Dependencies of compats
+    implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
+
+    //Testing
+    implementation fg.deobf("curse.maven:spark-361579:4738952")
+}
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
+}

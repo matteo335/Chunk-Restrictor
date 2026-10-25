@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[46,)"
+license="MIT license"
+
+[[mods]]
+modId="chunk_restrictor"
+authors="Mattéo 35"
+version="0.1"
+displayName="Chunk Restrictor"
+
+[[dependencies.chunk_restrictor]]
+modId="forge"
+versionRange="[47.1.0,)"
+mandatory=true
+side="BOTH"
+
+[[dependencies.chunk_restrictor]]
+modId="minecraft"
+versionRange="1.20.1"
+mandatory=true
+side="BOTH"

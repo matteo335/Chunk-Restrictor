@@ -1,0 +1,40 @@
+{
+  "ftbteamsconfig.chunk_restrictor": "Chunk Restrictor",
+  "ftbteamsconfig.chunk_restrictor.tooltip": "This mod prevent players from accessing specific chunks using Chunk Coordinates, which are different from the world coordinates",
+
+  "ftbteamsconfig.chunk_restrictor.claim_access": "Claim Access",
+  "ftbteamsconfig.chunk_restrictor.claim_access.tooltip": "Default access if no other property kicks in",
+
+  "ftbteamsconfig.chunk_restrictor.claim_access_enemy": "Enemy Access",
+  "ftbteamsconfig.chunk_restrictor.claim_access_enemy.tooltip": "Should enemies be able to enter the claims? UNLESS another property allow them",
+
+  "ftbteamsconfig.chunk_restrictor.claim_access_blacklist": "Blacklist Access",
+  "ftbteamsconfig.chunk_restrictor.claim_access_blacklist.tooltip": "These usernames will never be able to enter your claims",
+
+  "ftbteamsconfig.chunk_restrictor.chunk_access_public": "Public Chunks",
+  "ftbteamsconfig.chunk_restrictor.chunk_access_public.tooltip": "Allow these chunks to be accessed by everyone unless another property prevent them\n\nSimply put the X and Z values of a chunk and separate them with a space. For example in your F3 you will see something like \"Chunk: 1 y -7 [10 -10 in r.1.1.mca]\" - in this specific example you need to add \"1 -7\" NOT THE Y AND PUT A SPACE",
+
+  "ftbteamsconfig.chunk_restrictor.chunk_access_allies": "Ally Chunks",
+  "ftbteamsconfig.chunk_restrictor.chunk_access_allies.tooltip": "Allow these chunks to be accessed ONLY by allies unless another property prevent them\n\nSimply put the X and Z values of a chunk and separate them with a space. For example in your F3 you will see something like \"Chunk: 1 y -7 [10 -10 in r.1.1.mca]\" - in this specific example you need to add \"1 -7\" NOT THE Y AND PUT A SPACE",
+
+  "ftbteamsconfig.chunk_restrictor.chunk_access_member": "Member Chunks",
+  "ftbteamsconfig.chunk_restrictor.chunk_access_member.tooltip": "Allow these chunks to be accessed ONLY by members unless another property prevent them\n\nSimply put the X and Z values of a chunk and separate them with a space. For example in your F3 you will see something like \"Chunk: 1 y -7 [10 -10 in r.1.1.mca]\" - in this specific example you need to add \"1 -7\" NOT THE Y AND PUT A SPACE",
+
+  "ftbteamsconfig.chunk_restrictor.chunk_access_officer": "Officer Chunks",
+  "ftbteamsconfig.chunk_restrictor.chunk_access_officer.tooltip": "Allow these chunks to be accessed ONLY by officers unless another property prevent them\n\nSimply put the X and Z values of a chunk and separate them with a space. For example in your F3 you will see something like \"Chunk: 1 y -7 [10 -10 in r.1.1.mca]\" - in this specific example you need to add \"1 -7\" NOT THE Y AND PUT A SPACE",
+
+  "ftbteamsconfig.chunk_restrictor.chunk_access_admin": "Admin Chunks",
+  "ftbteamsconfig.chunk_restrictor.chunk_access_admin.tooltip": "This is working the same way as the previous \"Chunks\" values but using a custom permission called \"Admins\". This permission can be given by putting the username into the \"Admins\" property. This property will not automatically give access to all chunks in the claim, only to admin chunks",
+
+  "ftbteamsconfig.chunk_restrictor.player_access_allies": "Allies",
+  "ftbteamsconfig.chunk_restrictor.player_access_allies.tooltip": "Chunk Restrictor will consider these players as allies regardless of their actual rank",
+
+  "ftbteamsconfig.chunk_restrictor.player_access_member": "Members",
+  "ftbteamsconfig.chunk_restrictor.player_access_member.tooltip": "Chunk Restrictor will consider these players as members regardless of their actual rank",
+
+  "ftbteamsconfig.chunk_restrictor.player_access_officer": "Officers",
+  "ftbteamsconfig.chunk_restrictor.player_access_officer.tooltip": "Chunk restrictor will consider these players as members regardless of their actual rank",
+
+  "ftbteamsconfig.chunk_restrictor.player_access_admin": "Admins",
+  "ftbteamsconfig.chunk_restrictor.player_access_admin.tooltip": "Allow players to enter these custom \"Admin Chunks\". This doesn't give them permission to access all chunks"
+}
